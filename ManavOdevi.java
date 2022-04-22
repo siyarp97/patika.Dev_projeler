@@ -36,14 +36,6 @@ public class ManavOdevi {
 
         System.out.println(" ");
         System.out.println("Yine Bekleriz!");
-
-
-
-
-
-
-
-
     }
 
 }
