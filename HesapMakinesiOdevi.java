@@ -14,13 +14,9 @@ public class HesapMakinesiOdevi {
         System.out.print("Ikinci Sayiyi Giriniz : ");
         n2 = input.nextInt();
         //System.out.println(n2);
-        switch (n2){
-            case 0:
-                System.out.println("Bolunemez");
-        break;
-        }
+
         System.out.println("1- Toplama\n2-Cikarma\n3-Carpma\n4-Bolme");
-       System.out.print("Yapilacak Islemi Seciniz : ");
+        System.out.print("Yapilacak Islemi Seciniz : ");
         islem = input.nextInt();
 
         switch (islem) {
@@ -28,23 +24,30 @@ public class HesapMakinesiOdevi {
                 System.out.println(n1 + n2);
                 break;
             case 2:
-                System.out.println(n1-n2);
+                System.out.println(n1 - n2);
                 break;
             case 3:
                 System.out.println(n1 * n2);
                 break;
             case 4:
-                System.out.println(n1 / n2);
+                switch (n2){
+                    case 0:
+                        System.out.println("Bir Sayi Sifira Bolunemez");
+                        break;
+
+                        default: System.out.println(n1 / n2);
+                        break;
+
+                    }
                 break;
 
             default:
-                System.out.println("Yanlis deger tusladiniz")
-
+                System.out.println("Yanlis deger tusladiniz");
                 break;
-
-                }
 
         }
 
     }
+
+}
 
